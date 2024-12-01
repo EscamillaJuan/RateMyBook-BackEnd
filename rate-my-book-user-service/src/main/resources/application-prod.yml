@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:mysql://<your-production-db-host>:3306/your_database_name
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: <your-prod-username>
+    password: <your-prod-password>
+    jpa:
+      hibernate:
+        ddl-auto: validate
+      show-sql: false

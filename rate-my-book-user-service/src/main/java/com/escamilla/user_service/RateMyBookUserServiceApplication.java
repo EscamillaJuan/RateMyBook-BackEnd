@@ -1,13 +1,13 @@
-package com.escamilla.core;
+package com.escamilla.user_service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class RateMyBookCoreApplication {
+public class RateMyBookUserServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(RateMyBookCoreApplication.class, args);
+		SpringApplication.run(RateMyBookUserServiceApplication.class, args);
 	}
 
 }

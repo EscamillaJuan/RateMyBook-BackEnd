@@ -1,0 +1,9 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: rate-my-book-user-service
+
+logging:
+  level:
+    root: INFO
