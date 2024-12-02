@@ -1,9 +1,9 @@
 spring:
   datasource:
-    url: jdbc:h2:mem:devdb
+    url: ${DB-URI}
     driverClassName: org.h2.Driver
-    username: sa
-    password:
+    username: ${DB-USERNAME}
+    password: ${DB-PASSWORD}
   jpa:
     hibernate:
       ddl-auto: update
@@ -11,3 +11,8 @@ spring:
     properties:
       hibernate:
         format_sql: true
+
+
+token:
+  signature:
+    secret: ${SECRET}
