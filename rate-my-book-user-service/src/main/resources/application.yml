@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: dev
+    active: ${ENVIRONMENT}
   application:
     name: rate-my-book-user-service
 
