@@ -1,5 +1,7 @@
-package com.escamilla.user_service.payload.request;
+package com.escamilla.user_service.models.dto;
 
+import com.escamilla.user_service.models.entity.Role;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -9,14 +11,15 @@ import java.util.Date;
 
 @Data
 @Builder
-@NoArgsConstructor
 @AllArgsConstructor
-public class SignUpRequest {
+@NoArgsConstructor
+public class UserDto {
+    private String email;
+    private Role role;
+    private String userName;
     private String name;
     private String lastName;
-    private String username;
-    private String email;
-    private String password;
+    private String profilePictureUri;
     private Date dateBirth;
     private String gender;
     private String[] favoriteTopics;

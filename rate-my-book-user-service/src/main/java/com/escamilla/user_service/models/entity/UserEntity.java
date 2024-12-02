@@ -28,11 +28,9 @@ public class UserEntity implements UserDetails {
     @Enumerated(EnumType.STRING)
     private Role role;
     private String userName;
-    private String name;
+    private String firstName;
     private String lastName;
     private String profilePictureUri;
-    private Date dateBirth;
-    private String gender;
     private String[] favoriteTopics;
 
     @Override
